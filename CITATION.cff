@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this software or its released artifacts, please cite the associated manuscript."
-title: "GSC-HNN Reproducibility Release"
+title: "GSC-HNN: Learned Split Hamiltonian Maps"
 type: software
 authors:
   - family-names: Wang
@@ -11,7 +11,7 @@ authors:
     given-names: Kailiang
 license: BSD-3-Clause
 version: 0.1.0
-date-released: 2026-08-12
+date-released: 2026-08-24
 preferred-citation:
   type: article
   title: "Learned Split Hamiltonian Maps: Modified Dynamics and Finite-Iteration Effects"
