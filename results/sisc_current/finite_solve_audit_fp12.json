@@ -1,0 +1,77 @@
+{
+  "generated_by": "scripts/audit_finite_solve_symplecticity.py",
+  "generated_at_unix": 1786699121.092114,
+  "device": "cpu",
+  "map_defect_normalization": "none",
+  "primary_training_solver_default": {
+    "implicit_max_iters": 5,
+    "implicit_tol": 1e-06
+  },
+  "audit_is_retraining": false,
+  "rows": [
+    {
+      "system": "double_pendulum",
+      "checkpoint": "checkpoints/double_pendulum/gscd/multiseed/seed_0/best.pt",
+      "checkpoint_sha256": "7d5571cb2e88cbaf62daaa0c8d23b7f8908593dfb9f8802013c6d7a2de5b6e62",
+      "checkpoint_epoch": 376,
+      "checkpoint_val_loss": 0.19214753518558342,
+      "checkpoint_saved_implicit_max_iters": null,
+      "checkpoint_saved_implicit_tol": null,
+      "training_solver_default_if_unsaved": {
+        "implicit_max_iters": 5,
+        "implicit_tol": 1e-06
+      },
+      "evaluation_role": "fixed-checkpoint strict-control audit; no retraining",
+      "dt": 0.05,
+      "samples": 256,
+      "random_pairs_per_sample": 8,
+      "finite_difference_eps": 1e-05,
+      "implicit_max_iters": 12,
+      "implicit_tol": 1e-10,
+      "max_rho_F": 7.913757605978502e-10,
+      "p95_rho_F": 1.3021960190161549e-11,
+      "median_rho_F": 2.780163995245858e-13,
+      "cap_reached_count": 68,
+      "converged_count": 214,
+      "median_iterations": 10.0,
+      "max_iterations": 12,
+      "max_epsilon_omega": 1.328791097154891e-07,
+      "median_epsilon_omega": 7.283295633264686e-10,
+      "max_epsilon_fb": 4.832567355936294e-09,
+      "median_epsilon_fb": 3.1726020566714257e-12,
+      "elapsed_seconds": 12.21435022354126
+    },
+    {
+      "system": "spherical_pendulum",
+      "checkpoint": "checkpoints/spherical_pendulum/gscd/multiseed/seed_0/best.pt",
+      "checkpoint_sha256": "d98d9bec3581de5ea6913090699f29d02e96e37d40b8e788b7d9ffda8444ef35",
+      "checkpoint_epoch": 168,
+      "checkpoint_val_loss": 5.606904795083259e-07,
+      "checkpoint_saved_implicit_max_iters": null,
+      "checkpoint_saved_implicit_tol": null,
+      "training_solver_default_if_unsaved": {
+        "implicit_max_iters": 5,
+        "implicit_tol": 1e-06
+      },
+      "evaluation_role": "fixed-checkpoint strict-control audit; no retraining",
+      "dt": 0.05,
+      "samples": 256,
+      "random_pairs_per_sample": 8,
+      "finite_difference_eps": 1e-05,
+      "implicit_max_iters": 12,
+      "implicit_tol": 1e-10,
+      "max_rho_F": 1.6846177475574768e-11,
+      "p95_rho_F": 3.026460308555271e-13,
+      "median_rho_F": 7.0745598448471775e-15,
+      "cap_reached_count": 4,
+      "converged_count": 254,
+      "median_iterations": 7.0,
+      "max_iterations": 12,
+      "max_epsilon_omega": 1.4892380972852948e-07,
+      "median_epsilon_omega": 3.4899241968533445e-09,
+      "max_epsilon_fb": 3.0810592914203645e-11,
+      "median_epsilon_fb": 1.0534894642810638e-13,
+      "elapsed_seconds": 9.341363906860352
+    }
+  ]
+}

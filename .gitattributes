@@ -1,0 +1,11 @@
+# PyTorch tensors and checkpoints include files above GitHub's 100 MiB limit.
+# Install Git LFS before the first commit: https://git-lfs.com/
+*.pt filter=lfs diff=lfs merge=lfs -text
+
+# Keep text files normalized across platforms.
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.txt text eol=lf

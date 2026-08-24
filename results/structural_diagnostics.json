@@ -1,0 +1,211 @@
+{
+  "linear_fit": {
+    "fput": {
+      "r_linear_squared": 0.9981826719091464,
+      "ridge": 1e-08,
+      "train_samples": 64000,
+      "test_samples": 100000,
+      "difference": "forward",
+      "projection": "A -> J sym(-J A)"
+    },
+    "toda": {
+      "r_linear_squared": -514.1962889834805,
+      "ridge": 1e-08,
+      "train_samples": 64000,
+      "test_samples": 32000,
+      "difference": "forward",
+      "projection": "A -> J sym(-J A)"
+    },
+    "phi4": {
+      "r_linear_squared": 0.9984355233309127,
+      "ridge": 1e-08,
+      "train_samples": 64000,
+      "test_samples": 32000,
+      "difference": "forward",
+      "projection": "A -> J sym(-J A)"
+    },
+    "double_pendulum": {
+      "r_linear_squared": -0.38041996007835155,
+      "ridge": 1e-08,
+      "train_samples": 100000,
+      "test_samples": 10000,
+      "difference": "forward",
+      "projection": "A -> J sym(-J A)"
+    },
+    "spherical_pendulum": {
+      "r_linear_squared": 0.1919507402865004,
+      "ridge": 1e-08,
+      "train_samples": 100000,
+      "test_samples": 20000,
+      "difference": "forward",
+      "projection": "A -> J sym(-J A)"
+    }
+  },
+  "cayley": {
+    "fput": {
+      "rows": [
+        {
+          "seed": 0,
+          "condition_M": 2167472.176210186,
+          "spectral_radius_C": 1.0000000000000016
+        },
+        {
+          "seed": 1,
+          "condition_M": 3814316.403832359,
+          "spectral_radius_C": 1.0000000000000013
+        },
+        {
+          "seed": 2,
+          "condition_M": 3725608.9443926117,
+          "spectral_radius_C": 1.0000000000000013
+        },
+        {
+          "seed": 3,
+          "condition_M": 2874794.8291467153,
+          "spectral_radius_C": 1.0000000000000016
+        },
+        {
+          "seed": 4,
+          "condition_M": 3791812.4506204105,
+          "spectral_radius_C": 1.0000000000000016
+        }
+      ],
+      "condition_M_mean": 3274800.9608404567,
+      "condition_M_std": 732766.6024200576,
+      "spectral_radius_C_mean": 1.0000000000000013,
+      "spectral_radius_C_std": 1.9229626863835638e-16
+    },
+    "toda": {
+      "rows": [
+        {
+          "seed": 0,
+          "condition_M": 999932.6180241263,
+          "spectral_radius_C": 1.0000000000000029
+        },
+        {
+          "seed": 1,
+          "condition_M": 999937.9175395955,
+          "spectral_radius_C": 1.0000000000000029
+        },
+        {
+          "seed": 2,
+          "condition_M": 999927.2494688114,
+          "spectral_radius_C": 1.000000000000002
+        },
+        {
+          "seed": 3,
+          "condition_M": 999927.0664731533,
+          "spectral_radius_C": 1.000000000000004
+        },
+        {
+          "seed": 4,
+          "condition_M": 999925.7154476689,
+          "spectral_radius_C": 1.000000000000002
+        }
+      ],
+      "condition_M_mean": 999930.1133906711,
+      "condition_M_std": 5.09915646475255,
+      "spectral_radius_C_mean": 1.0000000000000029,
+      "spectral_radius_C_std": 8.3820000221454525e-16
+    },
+    "phi4": {
+      "rows": [
+        {
+          "seed": 0,
+          "condition_M": 3896878.532474605,
+          "spectral_radius_C": 1.0000000000000357
+        },
+        {
+          "seed": 1,
+          "condition_M": 3977067.4563783193,
+          "spectral_radius_C": 1.0000000000001157
+        },
+        {
+          "seed": 2,
+          "condition_M": 3796425.72850118,
+          "spectral_radius_C": 1.0000000000000093
+        },
+        {
+          "seed": 3,
+          "condition_M": 4090671.994296861,
+          "spectral_radius_C": 1.0000000000000429
+        },
+        {
+          "seed": 4,
+          "condition_M": 4072809.9118979685,
+          "spectral_radius_C": 1.0000000000000167
+        }
+      ],
+      "condition_M_mean": 3966770.7247097865,
+      "condition_M_std": 123089.59417495721,
+      "spectral_radius_C_mean": 1.000000000000044,
+      "spectral_radius_C_std": 4.2303430916421444e-14
+    },
+    "double_pendulum": {
+      "rows": [
+        {
+          "seed": 0,
+          "condition_M": 17.45048220400917,
+          "spectral_radius_C": 0.9999999999999999
+        },
+        {
+          "seed": 1,
+          "condition_M": 14.514349005971521,
+          "spectral_radius_C": 0.9999999999999993
+        },
+        {
+          "seed": 2,
+          "condition_M": 28.991293662776126,
+          "spectral_radius_C": 1.0000000000000002
+        },
+        {
+          "seed": 3,
+          "condition_M": 16.265253118855252,
+          "spectral_radius_C": 1.0000000000000004
+        },
+        {
+          "seed": 4,
+          "condition_M": 18.723387561118113,
+          "spectral_radius_C": 1.0000000000000007
+        }
+      ],
+      "condition_M_mean": 19.188953110546038,
+      "condition_M_std": 5.694841039298229,
+      "spectral_radius_C_mean": 1.0,
+      "spectral_radius_C_std": 5.3533015581491455e-16
+    },
+    "spherical_pendulum": {
+      "rows": [
+        {
+          "seed": 0,
+          "condition_M": 3211.1065647847927,
+          "spectral_radius_C": 1.0000000000000002
+        },
+        {
+          "seed": 1,
+          "condition_M": 578.5607636325018,
+          "spectral_radius_C": 1.0000000000000009
+        },
+        {
+          "seed": 2,
+          "condition_M": 2468.3670693464774,
+          "spectral_radius_C": 1.0
+        },
+        {
+          "seed": 3,
+          "condition_M": 1716.6250785787934,
+          "spectral_radius_C": 0.9999999999999999
+        },
+        {
+          "seed": 4,
+          "condition_M": 3976.7829855264795,
+          "spectral_radius_C": 1.0000000000000004
+        }
+      ],
+      "condition_M_mean": 2390.288492373809,
+      "condition_M_std": 1316.5279248043314,
+      "spectral_radius_C_mean": 1.0000000000000004,
+      "spectral_radius_C_std": 4.335559509131367e-16
+    }
+  }
+}

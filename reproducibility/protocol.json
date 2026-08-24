@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "manuscript": null,
+  "manuscript_note": "The SIADS manuscript is maintained in a separate submission package.",
+  "primary_solver_control": {
+    "implicit_max_iters": 5,
+    "implicit_tol": 1e-6,
+    "initial_iterate": "explicit_euler_predictor",
+    "batched_stopping": "per_state_freeze",
+    "role": "Euler-predictor implementation with per-state stopping; archived checkpoints predate the per-state stopping correction"
+  },
+  "strict_audit_control": {
+    "implicit_max_iters": 12,
+    "implicit_tol": 1e-10,
+    "role": "fixed-checkpoint re-evaluation; no retraining",
+    "map_defect_normalization": "none",
+    "tangent_estimator": "centered_finite_difference"
+  },
+  "state_error": {
+    "periodic_difference_interval": "[-pi, pi)",
+    "periodic_indices": {
+      "double_pendulum": [0, 1],
+      "spherical_pendulum": [1]
+    }
+  },
+  "training": {
+    "dtype": "float64",
+    "hidden_width": 128,
+    "rollout_window": 10,
+    "stride": 10,
+    "batch_size": 32,
+    "seeds": [0, 1, 2, 3, 4],
+    "activations": {
+      "gscd": "tanh",
+      "hnn": "tanh",
+      "node": "tanh",
+      "hnn_implicit": "gelu"
+    }
+  },
+  "systems": {
+    "fput": {"branch": "position_only", "epochs": 200, "steps": 20000, "test_ics": 12},
+    "toda": {"branch": "position_only", "epochs": 200, "steps": 2000, "test_ics": 16},
+    "phi4": {"branch": "position_only", "epochs": 200, "steps": 2000, "test_ics": 16},
+    "double_pendulum": {"branch": "full_state", "epochs": 500, "steps": 1000, "test_ics": 10},
+    "spherical_pendulum": {"branch": "full_state", "epochs": 500, "steps": 1000, "test_ics": 20}
+  },
+  "historical_retraining_pilots_are_primary": false,
+  "exact_data_regeneration": {
+    "fput": false,
+    "toda": true,
+    "phi4": true,
+    "double_pendulum": false,
+    "spherical_pendulum": true
+  }
+}
